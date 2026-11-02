@@ -1,0 +1,5 @@
+.venv
+readup
+.DS_Store
+README.md
+*.zip

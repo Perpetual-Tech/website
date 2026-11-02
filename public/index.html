@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080808" />
+    <meta name="description" content="Coming soon." />
+    <title>Coming soon</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/cradle.js" defer></script>
+  </head>
+  <body>
+    <main class="landing">
+      <div class="scene" role="group" aria-label="Interactive Newton's cradle">
+        <svg class="cradle" viewBox="160 60 480 310" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="ball-tone" cx="32%" cy="24%" r="82%">
+              <stop stop-color="#ececea" />
+              <stop offset=".58" stop-color="#bfc1c0" />
+              <stop offset="1" stop-color="#7d8283" />
+            </radialGradient>
+            <linearGradient id="frame-tone" x1="0" y1="0" x2="0" y2="1">
+              <stop stop-color="#888c8d" />
+              <stop offset="1" stop-color="#383b3c" />
+            </linearGradient>
+            <g id="sphere">
+              <circle r="18" fill="url(#ball-tone)" />
+            </g>
+          </defs>
+
+          <g>
+            <g class="pendulum" data-x="328">
+              <path class="wire" d="M328 100V252" />
+              <g class="bob" transform="translate(328 270)"><use href="#sphere" /></g>
+            </g>
+            <g class="pendulum" data-x="364">
+              <path class="wire" d="M364 100V252" />
+              <g class="bob" transform="translate(364 270)"><use href="#sphere" /></g>
+            </g>
+            <g class="pendulum" data-x="400">
+              <path class="wire" d="M400 100V252" />
+              <g class="bob" transform="translate(400 270)"><use href="#sphere" /></g>
+            </g>
+            <g class="pendulum" data-x="436">
+              <path class="wire" d="M436 100V252" />
+              <g class="bob" transform="translate(436 270)"><use href="#sphere" /></g>
+            </g>
+            <g class="pendulum" data-x="472">
+              <path class="wire" d="M472 100V252" />
+              <g class="bob" transform="translate(472 270)"><use href="#sphere" /></g>
+            </g>
+          </g>
+
+          <path d="M190 330V116Q190 100 206 100H594Q610 100 610 116V330" stroke="url(#frame-tone)" stroke-width="1.4" stroke-linecap="round" />
+        </svg>
+        <button class="pendulum-handle" data-index="0" type="button" aria-label="Left ball: drag outward, or press Enter to give it a push" hidden></button>
+        <button class="pendulum-handle" data-index="4" type="button" aria-label="Right ball: drag outward, or press Enter to give it a push" hidden></button>
+        <p class="interaction-hint" aria-hidden="true" hidden>
+          <svg viewBox="0 0 20 12" fill="none"><path d="M2 6H18M6 2L2 6L6 10M14 2L18 6L14 10" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          <span class="hint-drag">Drag a ball</span>
+          <span class="hint-keyboard">Enter to give it a push</span>
+        </p>
+      </div>
+      <h1>Coming soon<span>.</span></h1>
+    </main>
+  </body>
+</html>
